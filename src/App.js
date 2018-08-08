@@ -22,9 +22,11 @@ import Root from "./screens/Root";
 
 class App extends Component {
   render() {
-    <div className="App">
-      <Root />
-    </div>
+    return (
+      <div className="App">
+        <Root />
+      </div>
+    )
   }
 }
 export default App;
