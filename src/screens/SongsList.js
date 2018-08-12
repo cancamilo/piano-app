@@ -1,3 +1,5 @@
 import React, { Component } from 'react';
 const SongsListScreen = () => 
-    <div>Songs list screere!!en h</div>
+    <div>Songs list screeen h</div>
+
+export default SongsListScreen;
