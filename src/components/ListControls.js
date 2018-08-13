@@ -10,8 +10,17 @@ const ListControls = (props) =>
         </h3>
         <Vseparator/>
         <ButtonToolbar>
-            <Button bsStyle='success'>Play</Button>
-            <Button bsStyle='danger'>Stop</Button>
+            <Button 
+                bsStyle='success' 
+                onClick={props.playHandler}
+                disabled={props.selectedSong.length < 1}>
+                Play
+            </Button>
+            <Button 
+                bsStyle='danger'
+                onClick={props.stopHandler}>
+                Stop
+            </Button>
         </ButtonToolbar>
     </div>
 

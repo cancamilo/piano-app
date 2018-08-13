@@ -13,19 +13,11 @@ const HomeWrapper = styled.div`
     display: flex;
     justify-content: center;
 `
-const ButtonFrame = styled.div`
-    position: absolute;
-    top: 20px;
-    right: 20px;
-`
 
 export default class Home extends Component {
   render() {
     return (
-      <HomeWrapper>
-        <ButtonFrame>
-          <Button bsStyle = 'warning'>List</Button>
-        </ButtonFrame>
+      <HomeWrapper>        
         {this.props.children}
       </HomeWrapper>
     )
