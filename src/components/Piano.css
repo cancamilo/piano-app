@@ -1,4 +1,4 @@
-.piano {
+/* .piano {
   margin: auto;
   width: 500px;
 }
@@ -14,11 +14,10 @@ ul li {
   margin: 0;
   padding: 0;
   position: relative;
-  float: left;
-  
-}
+  float: left;   
+} */
 
-.white {
+/* .white {
   width: 50px;
   height: 200px;
   background: white;
@@ -53,4 +52,4 @@ ul li {
 
 .black + .white {
   margin-left: -15px;
-}
+} */

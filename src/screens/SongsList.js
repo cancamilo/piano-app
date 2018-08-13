@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-const SongsListScreen = () => 
-    <div>Songs list screeen h</div>
+
+import SongsListContainer from '../components/SonsgListContainer';
+
+
+
+const SongsListScreen = () => <SongsListContainer/>
 
 export default SongsListScreen;

@@ -20,25 +20,28 @@ const keySequence =
  {letter:'B',  type: 'white', join: false}
 ]
 
-const parseProps = (item, index, position) => {     
+const parseProps = (item, index, position) => {
 
     let {letter, type, join} = item;    
     const keyId = `${letter}${position}`;
     return { keyId, type, join}
 }
 
-
-const SequenceWrapper =styled.div`
-    border: 0px solid green;   
+const SequenceWrapper =styled.ul`    
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 `;
 
 const PianoSequence = (props) => 
-     <SequenceWrapper>
-        <ul>
+     <SequenceWrapper>        
             {keySequence.map((item, index) => 
-                <KeyControl key={index}  {...parseProps(item, index, props.position)}/> 
-            )}
-        </ul>
+                <KeyControl 
+                    key={index}  
+                    pianoKeyHandler={props.pianoKeyHandler}
+                    {...parseProps(item, index, props.position)}/> 
+            )}        
      </SequenceWrapper>     
 
 

@@ -1,9 +1,6 @@
 import {BlackKey, WhiteKey}  from './PainoParts';
 import React, {Component} from 'react';
 
-//import A0.mp3 from '../piano-sounds/A0.mp3';
-
-
 const loadSounds = () => {
     const cachedSounds = {};
     var imports = require.context('../piano-sounds', true, /\.mp3$/);    
@@ -21,7 +18,8 @@ class KeyControl extends Component {
     onTouchkey(e) {
         const keyString = `./${this.props.keyId}.mp3`
         const audio = this.sounds[keyString];
-        const foo = new Audio(audio).play();
+        new Audio(audio).play();
+        this.props.pianoKeyHandler(keyString);
     }
 
     render() {

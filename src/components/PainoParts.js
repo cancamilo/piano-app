@@ -7,7 +7,7 @@ export const PianoKey = styled.li`
     padding: 0;
     border-radius: 5px;
     position: relative;
-    float: left;
+    float: left;    
     transform: translateY(0px);
 `;
 
@@ -33,7 +33,7 @@ export const WhiteKey = PianoKey.extend`
     box-shadow: 2px 5px 0px 0px rgb(40,40,40);
     transition: all 0.2s;
     &:hover {
-        background: red;
+        background: rgb(230,230,230);
     }
     &:active {
         box-shadow: 2px 1px 1px 0px;
