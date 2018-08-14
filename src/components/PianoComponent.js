@@ -12,9 +12,9 @@ const PianoWrapper = styled.div`
 
 const PianoComponent = (props) => 
     <PianoWrapper>        
-        <PianoSequence position={1} pianoKeyHandler={props.pianoKeyHandler}/>    
-        <PianoSequence position={2} pianoKeyHandler={props.pianoKeyHandler}/>  
+        <PianoSequence position={2} pianoKeyHandler={props.pianoKeyHandler}/>    
         <PianoSequence position={3} pianoKeyHandler={props.pianoKeyHandler}/>  
+        <PianoSequence position={4} pianoKeyHandler={props.pianoKeyHandler}/>  
     </PianoWrapper>
 
 export default PianoComponent;

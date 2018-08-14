@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import SongsListComponent from './SongsListComponent';
 import ListControls from './ListControls';
 import SongPlayer from '../common/SongPlayer';
+import FloatingControl from './UI/FloatingControl';
+import {Link} from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 
 const player = new SongPlayer();
 
@@ -46,7 +49,16 @@ export default class SonsgListContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div>           
+          <FloatingControl>
+            <Link to='/'>        
+                <Button 
+                    bsStyle='default'    
+                    bsSize='large'>
+                        Back 
+                </Button>          
+            </Link>  
+          </FloatingControl>         
           <SongsListComponent 
               savedSongs = {this.state.loadedSongs}
               selected = {this.state.selectedIdx}

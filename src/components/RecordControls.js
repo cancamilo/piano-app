@@ -26,10 +26,9 @@ const RecordControls = (props) =>
             <Button 
                 bsStyle='warning'    
                 bsSize='large'>
-                    Load Song
+                Saved Songs
             </Button>          
-        </Link>           
-                              
+        </Link>                                         
     </ControlsGrid>
         
 

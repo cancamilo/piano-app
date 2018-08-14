@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Button, ButtonToolbar, Label} from 'react-bootstrap';
-import {Vseparator} from './UI/Separators';
+import {Vseparator, Hseparator} from './UI/Separators';
 
 const ListControls = (props) => 
     <div>
@@ -20,7 +20,7 @@ const ListControls = (props) =>
                 bsStyle='danger'
                 onClick={props.stopHandler}>
                 Stop
-            </Button>
+            </Button>         
         </ButtonToolbar>
     </div>
 
